@@ -61,7 +61,7 @@ curl -sS -X POST https://gmapsleadfinder.com/api/v1/review-jobs \
   -d '{"place":"https://maps.google.com/?cid=1234567890"}'
 ```
 
-`place` is a Google Maps place URL or `business_id` (`0x…:0x…`).
+`place` is a Google Maps place URL, share short link (`maps.app.goo.gl` / `goo.gl/maps/…`), or `business_id` (`0x…:0x…`).
 
 Response includes `jobId`, `creditsRemaining`.
 
@@ -110,7 +110,7 @@ curl -sS -X POST https://gmapsleadfinder.com/api/v1/photo-jobs \
   -d '{"place":"ChIJN1t_tDeuEmsRUsoyG83frY4"}'
 ```
 
-`place` is a Google Maps place URL, `business_id` (`0x…:0x…`), or Place ID (`ChIJ…`).
+`place` is a Google Maps place URL, share short link (`maps.app.goo.gl` / `goo.gl/maps/…`), `business_id` (`0x…:0x…`), or Place ID (`ChIJ…`).
 
 Response includes `jobId`, `creditsRemaining`.
 

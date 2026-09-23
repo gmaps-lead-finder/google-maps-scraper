@@ -78,8 +78,8 @@ http_headers = { Authorization = "Bearer gmf_your_key_here" }
 ## Agent tips
 
 - Create one job, wait until complete, then fetch results (or ask the agent to poll).
-- For reviews, use `gmaps_create_reviews_job` with a place URL or `business_id`, then poll and fetch via the reviews tools.
-- For photos, use `gmaps_create_photos_job` with a place URL, `business_id`, or Place ID, then poll and fetch via the photos tools.
+- For reviews, use `gmaps_create_reviews_job` with a place URL, share short link (`maps.app.goo.gl` / `goo.gl/maps/…`), or `business_id`, then poll and fetch via the reviews tools.
+- For photos, use `gmaps_create_photos_job` with a place URL, share short link, `business_id`, or Place ID, then poll and fetch via the photos tools.
 - For multiple keywords or places, run jobs **one after another** — concurrent jobs return `409`.
 - Never paste API keys into shared transcripts; use env vars or the product’s Agents UI when available.
 

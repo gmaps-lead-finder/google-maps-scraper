@@ -45,8 +45,8 @@ for (const row of rows.slice(0, 5)) {
 }
 
 // Single-place reviews / photos (run sequentially)
-const reviews = await client.scrapeReviews("https://maps.google.com/?cid=…");
-const photos = await client.scrapePhotos("ChIJ…"); // Place ID, URL, or business_id
+const reviews = await client.scrapeReviews("https://maps.app.goo.gl/…"); // URL, short link, or business_id
+const photos = await client.scrapePhotos("ChIJ…"); // Place ID, URL, short link, or business_id
 ```
 
 ### Low-level methods

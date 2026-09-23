@@ -64,7 +64,7 @@ Or use SDK helpers: `scrape` / `Scrape` / `ScrapeAsync` (Python / TypeScript / G
 ## Reviews HTTP workflow
 
 1. `GET /api/v1/me` — confirm credits.
-2. `POST /api/v1/review-jobs` with `{ "place": "<url or business_id>" }` → `jobId`.
+2. `POST /api/v1/review-jobs` with `{ "place": "<url, short link, or business_id>" }` → `jobId`.
 3. Poll `GET /api/v1/review-jobs/{id}` until `completed`, `partial`, or `failed`.
 4. `GET /api/v1/review-jobs/{id}/results?limit=100` and follow `nextCursor` until `null`.
 
@@ -73,7 +73,7 @@ Or use SDK helpers: `scrapeReviews` / `scrape_reviews` / `ScrapeReviews` / `Scra
 ## Photos HTTP workflow
 
 1. `GET /api/v1/me` — confirm credits.
-2. `POST /api/v1/photo-jobs` with `{ "place": "<url, business_id, or Place ID>" }` → `jobId`.
+2. `POST /api/v1/photo-jobs` with `{ "place": "<url, short link, business_id, or Place ID>" }` → `jobId`.
 3. Poll `GET /api/v1/photo-jobs/{id}` until `completed`, `partial`, or `failed`.
 4. `GET /api/v1/photo-jobs/{id}/results?limit=100` and follow `nextCursor` until `null`.
 

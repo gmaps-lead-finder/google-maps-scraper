@@ -101,7 +101,7 @@ High-level Google Maps extractor: creates a job, polls to a terminal status, the
 
 ### `create_reviews_job(place)` / `get_reviews_job(job_id)` / `get_reviews_results(job_id, *, limit=100, cursor=None)`
 
-Single-place reviews job. `place` is a Maps URL or `business_id`.
+Single-place reviews job. `place` is a Maps URL, share short link (`maps.app.goo.gl` / `goo.gl/maps/…`), or `business_id`.
 
 ### `scrape_reviews(place, *, poll_interval_ms=2000, timeout_ms=600_000, result_limit=100)`
 
@@ -109,7 +109,7 @@ Create reviews job → poll → all review rows.
 
 ### `create_photos_job(place)` / `get_photos_job(job_id)` / `get_photos_results(job_id, *, limit=100, cursor=None)`
 
-Single-place photos job. `place` is a Maps URL, `business_id`, or Place ID.
+Single-place photos job. `place` is a Maps URL, share short link, `business_id`, or Place ID.
 
 ### `scrape_photos(place, *, poll_interval_ms=2000, timeout_ms=600_000, result_limit=100)`
 

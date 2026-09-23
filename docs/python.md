@@ -45,8 +45,8 @@ for row in rows[:5]:
     print(row.get("Name"), row.get("Phone"), row.get("Website"))
 
 # Single-place reviews / photos (run sequentially)
-reviews = client.scrape_reviews("https://maps.google.com/?cid=…")
-photos = client.scrape_photos("ChIJ…")  # Place ID, URL, or business_id
+reviews = client.scrape_reviews("https://maps.app.goo.gl/…")  # URL, short link, or business_id
+photos = client.scrape_photos("ChIJ…")  # Place ID, URL, short link, or business_id
 ```
 
 ### Low-level methods

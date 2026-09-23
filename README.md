@@ -22,7 +22,7 @@
 
 Official open-source **Python + TypeScript + Go + Rust + PHP + Ruby + .NET** client kit for [GMaps Lead Finder](https://gmapsleadfinder.com) — scrape Google Maps **leads**, **reviews**, and **photos** through the hosted Agent HTTP API / Remote MCP.
 
-This repo does **not** run a local browser crawler. It calls the same cloud scrape-and-enrich pipeline as the Online Lead Extractor. Reviews/photos helpers take a single place (Maps URL, `business_id`, or Place ID for photos); see [docs/http-api.md](docs/http-api.md).
+This repo does **not** run a local browser crawler. It calls the same cloud scrape-and-enrich pipeline as the Online Lead Extractor. Reviews/photos helpers take a single place (Maps URL, share short link, `business_id`, or Place ID for photos); see [docs/http-api.md](docs/http-api.md).
 
 ## Get an API key
 
@@ -53,8 +53,8 @@ from gmaps_scraper import Client
 client = Client()  # reads GMF_API_KEY
 rows = client.scrape("dentists in Austin TX")
 print(len(rows), rows[0] if rows else None)
-# reviews = client.scrape_reviews("<place url or business_id>")
-# photos = client.scrape_photos("<place url, business_id, or Place ID>")
+# reviews = client.scrape_reviews("<place url, short link, or business_id>")
+# photos = client.scrape_photos("<place url, short link, business_id, or Place ID>")
 ```
 
 ### TypeScript / Node
@@ -71,8 +71,8 @@ import { Client } from "@gmapsleadfinder/google-maps-scraper";
 const client = new Client(); // reads GMF_API_KEY
 const rows = await client.scrape("dentists in Austin TX");
 console.log(rows.length, rows[0]);
-// const reviews = await client.scrapeReviews("<place url or business_id>");
-// const photos = await client.scrapePhotos("<place url, business_id, or Place ID>");
+// const reviews = await client.scrapeReviews("<place url, short link, or business_id>");
+// const photos = await client.scrapePhotos("<place url, short link, business_id, or Place ID>");
 ```
 
 ### Go

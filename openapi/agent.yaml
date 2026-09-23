@@ -142,7 +142,7 @@ paths:
               properties:
                 place:
                   type: string
-                  description: Google Maps place URL or business_id (0x…:0x…)
+                  description: Google Maps place URL, share short link (maps.app.goo.gl / goo.gl/maps/…), or business_id (0x…:0x…)
       responses:
         "200":
           description: Reviews job queued
@@ -237,7 +237,7 @@ paths:
               properties:
                 place:
                   type: string
-                  description: Google Maps place URL, business_id (0x…:0x…), or Place ID (ChIJ…)
+                  description: Google Maps place URL, share short link (maps.app.goo.gl / goo.gl/maps/…), business_id (0x…:0x…), or Place ID (ChIJ…)
       responses:
         "200":
           description: Photos job queued
