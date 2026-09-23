@@ -15,6 +15,7 @@
 - OpenAPI: https://gmapsleadfinder.com/openapi-agent.yaml
 - Support: support@gmapsleadfinder.com
 - Agent instructions in this repo: /AGENTS.md
+- Installable Agent Skill (skills.sh): https://github.com/google-maps-lead-scraper/google-maps-scraper-skill — `npx skills add google-maps-lead-scraper/google-maps-scraper-skill`
 - Human docs: /docs/getting-api-key.md, /docs/http-api.md, /docs/mcp.md, /docs/python.md, /docs/typescript.md, /go/README.md, /rust/README.md, /ruby/README.md, /dotnet/README.md
 - PHP SDK (separate repo): https://github.com/google-maps-lead-scraper/google-maps-scraper-php
 

@@ -181,6 +181,7 @@ Console.WriteLine(rows.Count);
 | HTTP API docs | https://gmapsleadfinder.com/docs/api |
 | Agent & MCP docs | https://gmapsleadfinder.com/docs/agent |
 | Agents hub | https://gmapsleadfinder.com/agents |
+| Agent Skill (skills.sh) | https://github.com/google-maps-lead-scraper/google-maps-scraper-skill — `npx skills add google-maps-lead-scraper/google-maps-scraper-skill` |
 | OpenAPI | https://gmapsleadfinder.com/openapi-agent.yaml |
 | Account / API key | https://gmapsleadfinder.com/account#api-key |
 | npm | https://www.npmjs.com/package/@gmapsleadfinder/google-maps-scraper |

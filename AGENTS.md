@@ -96,6 +96,7 @@ Rows are objects keyed by export column headers, e.g. `Name`, `Phone`, `Website`
 - Agent & MCP: https://gmapsleadfinder.com/docs/agent
 - OpenAPI: https://gmapsleadfinder.com/openapi-agent.yaml (repo copy: `openapi/agent.yaml`)
 - Pricing: https://gmapsleadfinder.com/pricing
+- Installable Agent Skill (skills.sh): https://github.com/google-maps-lead-scraper/google-maps-scraper-skill — `npx skills add google-maps-lead-scraper/google-maps-scraper-skill`
 - Repo guides: `docs/getting-api-key.md`, `docs/http-api.md`, `docs/mcp.md`, `docs/python.md`, `docs/typescript.md`, `go/README.md`, `rust/README.md`, `ruby/README.md`, `dotnet/README.md`
 - PHP SDK (separate repo): https://github.com/google-maps-lead-scraper/google-maps-scraper-php — Packagist `gmapsleadfinder/google-maps-scraper`
 
