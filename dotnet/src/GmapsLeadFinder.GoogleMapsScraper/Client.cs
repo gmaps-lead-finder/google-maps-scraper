@@ -10,7 +10,7 @@ public sealed class Client : IDisposable
     public const int DefaultPollIntervalMs = 2000;
     public const int DefaultTimeoutMs = 600_000;
     public const int DefaultResultLimit = 100;
-    public const string Version = "0.1.2";
+    public const string Version = "0.1.3";
     public const string UserAgent = "gmaps-scraper-dotnet/" + Version;
 
     private static readonly HashSet<string> TerminalStatuses = new(StringComparer.OrdinalIgnoreCase)

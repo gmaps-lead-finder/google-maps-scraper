@@ -32,7 +32,7 @@ DEFAULT_BASE_URL = "https://gmapsleadfinder.com"
 DEFAULT_POLL_INTERVAL_MS = 2000
 DEFAULT_TIMEOUT_MS = 600_000
 DEFAULT_RESULT_LIMIT = 100
-USER_AGENT = "gmaps-scraper-python/0.1.2"
+USER_AGENT = "gmaps-scraper-python/0.1.3"
 
 
 def _raise_for_status(status: int, body: Any) -> None:

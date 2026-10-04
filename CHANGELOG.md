@@ -1,11 +1,13 @@
 # Changelog
 
-## Unreleased
-
-- GitHub org is now [gmaps-lead-finder](https://github.com/gmaps-lead-finder); Go module path `github.com/gmaps-lead-finder/google-maps-scraper/go` (tag `go/v0.1.4`)
-
-
 All notable changes to this project will be documented in this file.
+
+## [0.1.3] - 2026-10-04
+
+### Changed
+
+- GitHub org / repository metadata is now [gmaps-lead-finder](https://github.com/gmaps-lead-finder) across npm, PyPI, crates.io, RubyGems, and NuGet package manifests
+- Bumped SDK package versions to `0.1.3` (npm, PyPI, crates.io, RubyGems, NuGet)
 
 ## [0.1.2] - 2026-09-19
 

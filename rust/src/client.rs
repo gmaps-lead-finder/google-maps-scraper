@@ -17,7 +17,7 @@ const DEFAULT_POLL_INTERVAL_MS: u64 = 2000;
 const DEFAULT_TIMEOUT_MS: u64 = 600_000;
 const DEFAULT_RESULT_LIMIT: u32 = 100;
 const DEFAULT_HTTP_TIMEOUT_MS: u64 = 60_000;
-const UA: &str = "gmaps-scraper-rust/0.1.2";
+const UA: &str = "gmaps-scraper-rust/0.1.3";
 
 pub struct Client {
     base_url: String,

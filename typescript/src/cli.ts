@@ -5,7 +5,7 @@ import { Client } from "./client.js";
 import { ApiError } from "./errors.js";
 import type { PlaceRow } from "./types.js";
 
-const VERSION = "0.1.2";
+const VERSION = "0.1.3";
 
 function printHelp(): void {
   console.log(`gmaps-scraper ${VERSION}

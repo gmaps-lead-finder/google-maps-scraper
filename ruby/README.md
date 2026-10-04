@@ -108,7 +108,7 @@ bundle exec gmaps-scraper me
 ```bash
 cd ruby
 gem build google-maps-scraper-sdk.gemspec
-gem push google-maps-scraper-sdk-0.1.2.gem
+gem push google-maps-scraper-sdk-0.1.3.gem
 ```
 
 ## Links

@@ -7,7 +7,7 @@
     <LangVersion>latest</LangVersion>
     <RootNamespace>GmapsLeadFinder.GoogleMapsScraper.Cli</RootNamespace>
     <AssemblyName>gmaps-scraper</AssemblyName>
-    <Version>0.1.2</Version>
+    <Version>0.1.3</Version>
     <Authors>GMaps Lead Finder</Authors>
     <Description>CLI for GMaps Lead Finder Google Maps Scraper SDK</Description>
     <PackageId>GmapsLeadFinder.GoogleMapsScraper.Cli</PackageId>

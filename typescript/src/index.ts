@@ -22,4 +22,4 @@ export type {
 } from "./types.js";
 export { TERMINAL_STATUSES } from "./types.js";
 
-export const version = "0.1.2";
+export const version = "0.1.3";

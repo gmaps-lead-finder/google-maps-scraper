@@ -6,7 +6,7 @@
     <LangVersion>latest</LangVersion>
     <RootNamespace>GmapsLeadFinder.GoogleMapsScraper</RootNamespace>
     <AssemblyName>GmapsLeadFinder.GoogleMapsScraper</AssemblyName>
-    <Version>0.1.2</Version>
+    <Version>0.1.3</Version>
     <Authors>GMaps Lead Finder</Authors>
     <Company>GMaps Lead Finder</Company>
     <Description>Google Maps Scraper / Extractor / Lead Scraper SDK for the GMaps Lead Finder Agent HTTP API</Description>
