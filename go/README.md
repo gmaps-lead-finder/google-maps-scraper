@@ -117,8 +117,8 @@ Typed errors: `AuthenticationError` (401), `PlanNotAllowedError` (403), `Insuffi
 Go modules are published via **Git tags** (no separate upload):
 
 ```bash
-git tag go/v0.1.3
-git push origin go/v0.1.3
+git tag go/v0.1.4
+git push origin go/v0.1.4
 GOPROXY=https://proxy.golang.org go list -m github.com/gmaps-lead-finder/google-maps-scraper/go@v0.1.4
 ```
 
