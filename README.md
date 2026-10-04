@@ -22,9 +22,7 @@
 
 Official open-source **Python + TypeScript + Go + Rust + PHP + Ruby + .NET** client kit for [GMaps Lead Finder](https://gmapsleadfinder.com) — scrape Google Maps **leads**, **reviews**, and **photos** through the hosted Agent HTTP API / Remote MCP.
 
-This repo does **not** run a local browser crawler. It calls the same cloud scrape-and-enrich pipeline as the Online Lead Extractor. Reviews/photos helpers take a single place (Maps URL, share short link, `business_id`, or Place ID for photos); see [HTTP API guide](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/http-api.md).
-
-Integrations (n8n / Make / Zapier / Google Sheets add-ons) and human guides live in the sibling repo **[google-maps-scraper-integration](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration)**.
+This repo does **not** run a local browser crawler. It calls the same cloud scrape-and-enrich pipeline as the Online Lead Extractor. Reviews/photos helpers take a single place (Maps URL, share short link, `business_id`, or Place ID for photos); see the [HTTP API docs](https://gmapsleadfinder.com/docs/api).
 
 ## Get an API key
 
@@ -35,8 +33,6 @@ Integrations (n8n / Make / Zapier / Google Sheets add-ons) and human guides live
 ```bash
 export GMF_API_KEY=gmf_your_key_here
 ```
-
-Full walkthrough: [getting-api-key.md](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/getting-api-key.md).
 
 ## 60-second Quickstart
 
@@ -196,7 +192,7 @@ Console.WriteLine(rows.Count);
 | NuGet | https://www.nuget.org/packages/GmapsLeadFinder.GoogleMapsScraper |
 | Support | support@gmapsleadfinder.com |
 
-Repo docs: [HTTP](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/http-api.md) · [MCP](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/mcp.md) · [Python](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/python.md) · [TypeScript](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/typescript.md) · [Go](go/README.md) · [Rust](rust/README.md) · [Ruby](ruby/README.md) · [.NET](dotnet/README.md) · [Publishing](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/publishing.md) · [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt) · [Integrations](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration)
+Repo docs: [Python](python/README.md) · [TypeScript](typescript/README.md) · [Go](go/README.md) · [Rust](rust/README.md) · [Ruby](ruby/README.md) · [.NET](dotnet/README.md) · [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt)
 
 ## Remote MCP (Claude / Cursor / Codex)
 
@@ -224,7 +220,7 @@ claude mcp add --transport http gmaps-finder https://gmapsleadfinder.com/mcp \
 }
 ```
 
-MCP tools: `gmaps_me`, `gmaps_create_job`, `gmaps_get_job`, `gmaps_get_results`, `gmaps_create_reviews_job`, `gmaps_get_reviews_job`, `gmaps_get_reviews_results`, `gmaps_create_photos_job`, `gmaps_get_photos_job`, `gmaps_get_photos_results`. Details: [docs/mcp.md](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/mcp.md).
+MCP tools: `gmaps_me`, `gmaps_create_job`, `gmaps_get_job`, `gmaps_get_results`, `gmaps_create_reviews_job`, `gmaps_get_reviews_job`, `gmaps_get_reviews_results`, `gmaps_create_photos_job`, `gmaps_get_photos_job`, `gmaps_get_photos_results`. Details: [Agent & MCP docs](https://gmapsleadfinder.com/docs/agent).
 
 ## Limits (read before batching)
 
@@ -233,18 +229,6 @@ MCP tools: `gmaps_me`, `gmaps_create_job`, `gmaps_get_job`, `gmaps_get_results`,
 - **1 credit = 1 place row**; enrich is included
 - Agent HTTP/MCP requires **Growth+**
 - Results page size: `limit` 1–500 (default 100); follow `nextCursor`
-
-## Integrations (n8n, Make, Zapier, Google Sheets)
-
-Import-ready automations and Sheets add-ons live in **[google-maps-scraper-integration](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration)**:
-
-- [examples/n8n/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/examples/n8n) — workflow JSON (Creator Portal)
-- [examples/make/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/examples/make) — HTTP blueprint
-- [examples/zapier/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/examples/zapier) — Platform CLI TypeScript
-- [google-sheets/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/google-sheets) — Workspace Marketplace Editor Add-ons (leads / reviews / photos)
-- Checklists: [docs/n8n/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/docs/n8n), [docs/zapier/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/docs/zapier), [docs/make/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/docs/make)
-
-Guides: [n8n leads](https://gmapsleadfinder.com/guides/scrape-google-maps-leads-with-n8n) · [Zapier](https://gmapsleadfinder.com/guides/scrape-google-maps-leads-with-zapier)
 
 ## Repository layout
 
@@ -258,9 +242,6 @@ dotnet/          # NuGet: GmapsLeadFinder.GoogleMapsScraper (+ Cli tool)
 openapi/         # OpenAPI snapshot
 AGENTS.md        # Instructions for AI agents
 llms.txt         # Machine-readable summary
-
-# Integrations + human docs (moved):
-# https://github.com/google-maps-lead-scraper/google-maps-scraper-integration
 
 # PHP lives in a separate repo (Packagist root composer.json):
 # https://github.com/GMaps-Lead-Finder/google-maps-scraper-php

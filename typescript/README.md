@@ -165,7 +165,6 @@ If you also installed the Python package globally, both expose a `gmaps-scraper`
 | Get API key | https://gmapsleadfinder.com/account#api-key |
 | npm | https://www.npmjs.com/package/@gmapsleadfinder/google-maps-scraper |
 | Source / examples | https://github.com/GMaps-Lead-Finder/google-maps-scraper |
-| TypeScript guide | https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/typescript.md |
 
 Prefer Remote MCP for Claude / Cursor / Codex? See the [Agent docs](https://gmapsleadfinder.com/docs/agent).
 

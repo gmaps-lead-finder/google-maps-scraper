@@ -160,7 +160,6 @@ python -m gmaps_scraper.cli scrape "coffee shops in Austin TX" --out leads.csv
 | Get API key | https://gmapsleadfinder.com/account#api-key |
 | PyPI | https://pypi.org/project/google-maps-scraper-sdk/ |
 | Source / examples | https://github.com/GMaps-Lead-Finder/google-maps-scraper |
-| Python guide | https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/python.md |
 
 Prefer Remote MCP for Claude / Cursor / Codex? See the [Agent docs](https://gmapsleadfinder.com/docs/agent).
 

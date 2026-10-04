@@ -16,9 +16,7 @@
 - Support: support@gmapsleadfinder.com
 - Agent instructions in this repo: /AGENTS.md
 - Installable Agent Skill (skills.sh): https://github.com/GMaps-Lead-Finder/google-maps-scraper-skill — `npx skills add GMaps-Lead-Finder/google-maps-scraper-skill`
-- Human docs & integrations: https://github.com/google-maps-lead-scraper/google-maps-scraper-integration (`docs/`, `examples/`, `google-sheets/`)
-- Language SDK READMEs in this repo: /go/README.md, /rust/README.md, /ruby/README.md, /dotnet/README.md
-- Guides: https://gmapsleadfinder.com/guides/scrape-google-maps-leads-with-n8n · https://gmapsleadfinder.com/guides/scrape-google-maps-leads-with-zapier
+- Language SDK READMEs in this repo: /python/README.md, /typescript/README.md, /go/README.md, /rust/README.md, /ruby/README.md, /dotnet/README.md
 - PHP SDK (separate repo): https://github.com/GMaps-Lead-Finder/google-maps-scraper-php
 
 ## API summary
@@ -60,4 +58,3 @@
 - RubyGems: https://rubygems.org/gems/google-maps-scraper-sdk
 - NuGet: https://www.nuget.org/packages/GmapsLeadFinder.GoogleMapsScraper
 - High-level helpers: scrape/Scrape/ScrapeAsync (leads); scrape_reviews/scrapeReviews/ScrapeReviews/ScrapeReviewsAsync; scrape_photos/scrapePhotos/ScrapePhotos/ScrapePhotosAsync
-- Maintainer publish guide: https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/publishing.md

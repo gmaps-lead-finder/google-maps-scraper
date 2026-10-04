@@ -31,5 +31,4 @@ Out of scope:
 ## Pull requests
 
 1. Describe the change and why.
-2. Update the [integration repo](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration) docs/examples if the public surface changes.
-3. Keep commits focused; avoid unrelated refactors.
+2. Keep commits focused; avoid unrelated refactors.

@@ -97,16 +97,14 @@ Rows are objects keyed by export column headers, e.g. `Name`, `Phone`, `Website`
 - OpenAPI: https://gmapsleadfinder.com/openapi-agent.yaml (repo copy: `openapi/agent.yaml`)
 - Pricing: https://gmapsleadfinder.com/pricing
 - Installable Agent Skill (skills.sh): https://github.com/GMaps-Lead-Finder/google-maps-scraper-skill — `npx skills add GMaps-Lead-Finder/google-maps-scraper-skill`
-- Repo guides: https://github.com/google-maps-lead-scraper/google-maps-scraper-integration (`docs/getting-api-key.md`, `docs/http-api.md`, `docs/mcp.md`, `docs/python.md`, `docs/typescript.md`); language SDK READMEs in this repo (`go/`, `rust/`, `ruby/`, `dotnet/`)
-- n8n / Make / Zapier / Sheets: https://github.com/google-maps-lead-scraper/google-maps-scraper-integration (`examples/`, `docs/n8n/`, `docs/zapier/`, `docs/make/`, `google-sheets/`)
+- Language SDK READMEs in this repo: `python/`, `typescript/`, `go/`, `rust/`, `ruby/`, `dotnet/`
 - PHP SDK (separate repo): https://github.com/GMaps-Lead-Finder/google-maps-scraper-php — Packagist `gmapsleadfinder/google-maps-scraper`
 
 ## When editing this repo
 
 - Keep Python, TypeScript, Go, Rust, Ruby, .NET, and PHP public APIs aligned (PHP changes land in the separate PHP repo).
 - Do not add Playwright/Selenium scrapers or auth bypasses.
-- Update the **integration** repo docs/examples when changing client surfaces that affect automations.
-- Go releases use Git tags `go/vX.Y.Z` (see integration `docs/publishing.md`).
+- Go releases use Git tags `go/vX.Y.Z`.
 - Rust releases use `cargo publish` from `rust/`.
 - Ruby releases use `gem build` / `gem push` from `ruby/`.
 - .NET releases use `dotnet pack` / `dotnet nuget push` from `dotnet/`.
