@@ -8,7 +8,7 @@
 [![npm](https://img.shields.io/npm/v/@gmapsleadfinder/google-maps-scraper.svg)](https://www.npmjs.com/package/@gmapsleadfinder/google-maps-scraper)
 [![PyPI](https://img.shields.io/pypi/v/google-maps-scraper-sdk.svg)](https://pypi.org/project/google-maps-scraper-sdk/)
 [![Crates.io](https://img.shields.io/crates/v/google-maps-scraper-sdk.svg)](https://crates.io/crates/google-maps-scraper-sdk)
-[![Go Reference](https://pkg.go.dev/badge/github.com/google-maps-lead-scraper/google-maps-scraper/go.svg)](https://pkg.go.dev/github.com/google-maps-lead-scraper/google-maps-scraper/go)
+[![Go Reference](https://pkg.go.dev/badge/github.com/GMaps-Lead-Finder/google-maps-scraper/go.svg)](https://pkg.go.dev/github.com/GMaps-Lead-Finder/google-maps-scraper/go)
 [![Packagist](https://img.shields.io/packagist/v/gmapsleadfinder/google-maps-scraper.svg)](https://packagist.org/packages/gmapsleadfinder/google-maps-scraper)
 [![Gem Version](https://img.shields.io/gem/v/google-maps-scraper-sdk.svg)](https://rubygems.org/gems/google-maps-scraper-sdk)
 [![NuGet](https://img.shields.io/nuget/v/GmapsLeadFinder.GoogleMapsScraper.svg)](https://www.nuget.org/packages/GmapsLeadFinder.GoogleMapsScraper)
@@ -16,13 +16,15 @@
 [![Node.js 18+](https://img.shields.io/badge/node-18+-339933.svg)](typescript/)
 [![Go 1.22+](https://img.shields.io/badge/go-1.22+-00ADD8.svg)](go/)
 [![Rust](https://img.shields.io/badge/rust-1.70+-dea584.svg)](rust/)
-[![PHP 8.1+](https://img.shields.io/badge/php-8.1+-777BB4.svg)](https://github.com/google-maps-lead-scraper/google-maps-scraper-php)
+[![PHP 8.1+](https://img.shields.io/badge/php-8.1+-777BB4.svg)](https://github.com/GMaps-Lead-Finder/google-maps-scraper-php)
 [![Ruby 3.1+](https://img.shields.io/badge/ruby-3.1+-CC342D.svg)](ruby/)
 [![.NET 8+](https://img.shields.io/badge/.NET-8+-512BD4.svg)](dotnet/)
 
 Official open-source **Python + TypeScript + Go + Rust + PHP + Ruby + .NET** client kit for [GMaps Lead Finder](https://gmapsleadfinder.com) — scrape Google Maps **leads**, **reviews**, and **photos** through the hosted Agent HTTP API / Remote MCP.
 
-This repo does **not** run a local browser crawler. It calls the same cloud scrape-and-enrich pipeline as the Online Lead Extractor. Reviews/photos helpers take a single place (Maps URL, share short link, `business_id`, or Place ID for photos); see [docs/http-api.md](docs/http-api.md).
+This repo does **not** run a local browser crawler. It calls the same cloud scrape-and-enrich pipeline as the Online Lead Extractor. Reviews/photos helpers take a single place (Maps URL, share short link, `business_id`, or Place ID for photos); see [HTTP API guide](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/http-api.md).
+
+Integrations (n8n / Make / Zapier / Google Sheets add-ons) and human guides live in the sibling repo **[google-maps-scraper-integration](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration)**.
 
 ## Get an API key
 
@@ -34,7 +36,7 @@ This repo does **not** run a local browser crawler. It calls the same cloud scra
 export GMF_API_KEY=gmf_your_key_here
 ```
 
-Full walkthrough: [docs/getting-api-key.md](docs/getting-api-key.md).
+Full walkthrough: [getting-api-key.md](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/getting-api-key.md).
 
 ## 60-second Quickstart
 
@@ -78,11 +80,11 @@ console.log(rows.length, rows[0]);
 ### Go
 
 ```bash
-go get github.com/google-maps-lead-scraper/google-maps-scraper/go@v0.1.2
+go get github.com/GMaps-Lead-Finder/google-maps-scraper/go@v0.1.3
 ```
 
 ```go
-import gmaps "github.com/google-maps-lead-scraper/google-maps-scraper/go"
+import gmaps "github.com/GMaps-Lead-Finder/google-maps-scraper/go"
 
 client, _ := gmaps.NewClient(nil) // reads GMF_API_KEY
 rows, _ := client.Scrape("dentists in Austin TX", nil)
@@ -130,7 +132,7 @@ echo count($rows), "\n";
 // $photos = $client->scrapePhotos("<place>");
 ```
 
-Source: [google-maps-scraper-php](https://github.com/google-maps-lead-scraper/google-maps-scraper-php) (Packagist: `gmapsleadfinder/google-maps-scraper`).
+Source: [google-maps-scraper-php](https://github.com/GMaps-Lead-Finder/google-maps-scraper-php) (Packagist: `gmapsleadfinder/google-maps-scraper`).
 
 ### Ruby
 
@@ -181,20 +183,20 @@ Console.WriteLine(rows.Count);
 | HTTP API docs | https://gmapsleadfinder.com/docs/api |
 | Agent & MCP docs | https://gmapsleadfinder.com/docs/agent |
 | Agents hub | https://gmapsleadfinder.com/agents |
-| Agent Skill (skills.sh) | https://github.com/google-maps-lead-scraper/google-maps-scraper-skill — `npx skills add google-maps-lead-scraper/google-maps-scraper-skill` |
+| Agent Skill (skills.sh) | https://github.com/GMaps-Lead-Finder/google-maps-scraper-skill — `npx skills add GMaps-Lead-Finder/google-maps-scraper-skill` |
 | OpenAPI | https://gmapsleadfinder.com/openapi-agent.yaml |
 | Account / API key | https://gmapsleadfinder.com/account#api-key |
 | npm | https://www.npmjs.com/package/@gmapsleadfinder/google-maps-scraper |
 | PyPI | https://pypi.org/project/google-maps-scraper-sdk/ |
-| Go (pkg.go.dev) | https://pkg.go.dev/github.com/google-maps-lead-scraper/google-maps-scraper/go |
+| Go (pkg.go.dev) | https://pkg.go.dev/github.com/GMaps-Lead-Finder/google-maps-scraper/go |
 | crates.io | https://crates.io/crates/google-maps-scraper-sdk |
 | Packagist (PHP) | https://packagist.org/packages/gmapsleadfinder/google-maps-scraper |
-| PHP repo | https://github.com/google-maps-lead-scraper/google-maps-scraper-php |
+| PHP repo | https://github.com/GMaps-Lead-Finder/google-maps-scraper-php |
 | RubyGems | https://rubygems.org/gems/google-maps-scraper-sdk |
 | NuGet | https://www.nuget.org/packages/GmapsLeadFinder.GoogleMapsScraper |
 | Support | support@gmapsleadfinder.com |
 
-Repo docs: [HTTP](docs/http-api.md) · [MCP](docs/mcp.md) · [Python](docs/python.md) · [TypeScript](docs/typescript.md) · [Go](go/README.md) · [Rust](rust/README.md) · [Ruby](ruby/README.md) · [.NET](dotnet/README.md) · [Publishing](docs/publishing.md) · [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt)
+Repo docs: [HTTP](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/http-api.md) · [MCP](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/mcp.md) · [Python](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/python.md) · [TypeScript](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/typescript.md) · [Go](go/README.md) · [Rust](rust/README.md) · [Ruby](ruby/README.md) · [.NET](dotnet/README.md) · [Publishing](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/publishing.md) · [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt) · [Integrations](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration)
 
 ## Remote MCP (Claude / Cursor / Codex)
 
@@ -222,7 +224,7 @@ claude mcp add --transport http gmaps-finder https://gmapsleadfinder.com/mcp \
 }
 ```
 
-MCP tools: `gmaps_me`, `gmaps_create_job`, `gmaps_get_job`, `gmaps_get_results`, `gmaps_create_reviews_job`, `gmaps_get_reviews_job`, `gmaps_get_reviews_results`, `gmaps_create_photos_job`, `gmaps_get_photos_job`, `gmaps_get_photos_results`. Details: [docs/mcp.md](docs/mcp.md).
+MCP tools: `gmaps_me`, `gmaps_create_job`, `gmaps_get_job`, `gmaps_get_results`, `gmaps_create_reviews_job`, `gmaps_get_reviews_job`, `gmaps_get_reviews_results`, `gmaps_create_photos_job`, `gmaps_get_photos_job`, `gmaps_get_photos_results`. Details: [docs/mcp.md](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/mcp.md).
 
 ## Limits (read before batching)
 
@@ -231,6 +233,18 @@ MCP tools: `gmaps_me`, `gmaps_create_job`, `gmaps_get_job`, `gmaps_get_results`,
 - **1 credit = 1 place row**; enrich is included
 - Agent HTTP/MCP requires **Growth+**
 - Results page size: `limit` 1–500 (default 100); follow `nextCursor`
+
+## Integrations (n8n, Make, Zapier, Google Sheets)
+
+Import-ready automations and Sheets add-ons live in **[google-maps-scraper-integration](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration)**:
+
+- [examples/n8n/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/examples/n8n) — workflow JSON (Creator Portal)
+- [examples/make/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/examples/make) — HTTP blueprint
+- [examples/zapier/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/examples/zapier) — Platform CLI TypeScript
+- [google-sheets/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/google-sheets) — Workspace Marketplace Editor Add-ons (leads / reviews / photos)
+- Checklists: [docs/n8n/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/docs/n8n), [docs/zapier/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/docs/zapier), [docs/make/](https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/tree/main/docs/make)
+
+Guides: [n8n leads](https://gmapsleadfinder.com/guides/scrape-google-maps-leads-with-n8n) · [Zapier](https://gmapsleadfinder.com/guides/scrape-google-maps-leads-with-zapier)
 
 ## Repository layout
 
@@ -241,13 +255,15 @@ go/              # Go module (pkg.go.dev); tag go/vX.Y.Z
 rust/            # crates.io: google-maps-scraper-sdk
 ruby/            # RubyGems: google-maps-scraper-sdk (require gmaps_scraper)
 dotnet/          # NuGet: GmapsLeadFinder.GoogleMapsScraper (+ Cli tool)
-docs/            # Human guides
 openapi/         # OpenAPI snapshot
 AGENTS.md        # Instructions for AI agents
 llms.txt         # Machine-readable summary
 
+# Integrations + human docs (moved):
+# https://github.com/google-maps-lead-scraper/google-maps-scraper-integration
+
 # PHP lives in a separate repo (Packagist root composer.json):
-# https://github.com/google-maps-lead-scraper/google-maps-scraper-php
+# https://github.com/GMaps-Lead-Finder/google-maps-scraper-php
 ```
 
 ## License

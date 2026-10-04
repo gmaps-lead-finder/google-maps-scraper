@@ -18,12 +18,12 @@ Gem::Specification.new do |spec|
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] =
-    "https://github.com/google-maps-lead-scraper/google-maps-scraper/tree/main/ruby"
+    "https://github.com/GMaps-Lead-Finder/google-maps-scraper/tree/main/ruby"
   spec.metadata["changelog_uri"] =
-    "https://github.com/google-maps-lead-scraper/google-maps-scraper/blob/main/CHANGELOG.md"
+    "https://github.com/GMaps-Lead-Finder/google-maps-scraper/blob/main/CHANGELOG.md"
   spec.metadata["documentation_uri"] = "https://gmapsleadfinder.com/docs/api"
   spec.metadata["bug_tracker_uri"] =
-    "https://github.com/google-maps-lead-scraper/google-maps-scraper/issues"
+    "https://github.com/GMaps-Lead-Finder/google-maps-scraper/issues"
   spec.metadata["rubygems_mfa_required"] = "true"
 
   spec.files = Dir.chdir(__dir__) do

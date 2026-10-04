@@ -1,7 +1,7 @@
 # Google Maps Scraper
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/google-maps-lead-scraper/google-maps-scraper/main/google-maps-scraper.png" alt="Google Maps Lead Scraper" width="100%" />
+  <img src="https://raw.githubusercontent.com/GMaps-Lead-Finder/google-maps-scraper/main/google-maps-scraper.png" alt="Google Maps Lead Scraper" width="100%" />
 </p>
 
 **Google Maps Extractor · Google Maps Lead Scraper · Google Maps Lead Extractor**
@@ -118,7 +118,7 @@ gem push google-maps-scraper-sdk-0.1.2.gem
 | Website | https://gmapsleadfinder.com |
 | HTTP API | https://gmapsleadfinder.com/docs/api |
 | RubyGems | https://rubygems.org/gems/google-maps-scraper-sdk |
-| Monorepo | https://github.com/google-maps-lead-scraper/google-maps-scraper |
+| Monorepo | https://github.com/GMaps-Lead-Finder/google-maps-scraper |
 
 ## License
 

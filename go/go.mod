@@ -1,3 +1,3 @@
-module github.com/google-maps-lead-scraper/google-maps-scraper/go
+module github.com/GMaps-Lead-Finder/google-maps-scraper/go
 
 go 1.22

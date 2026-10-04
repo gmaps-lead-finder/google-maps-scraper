@@ -336,6 +336,13 @@ components:
           type: number
         creditsRemaining:
           type: number
+          description: Total spendable (subscription remaining + permanent packs)
+        permanentCredits:
+          type: number
+          description: Non-expiring credits from one-time packs
+        subscriptionCreditsRemaining:
+          type: number
+          description: Remaining credits from the active subscription period
     CreateJobResponse:
       type: object
       required: [jobId, keywordCount, creditsRemaining]

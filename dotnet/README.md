@@ -1,7 +1,7 @@
 # Google Maps Scraper
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/google-maps-lead-scraper/google-maps-scraper/main/google-maps-scraper.png" alt="Google Maps Lead Scraper" width="100%" />
+  <img src="https://raw.githubusercontent.com/GMaps-Lead-Finder/google-maps-scraper/main/google-maps-scraper.png" alt="Google Maps Lead Scraper" width="100%" />
 </p>
 
 **Google Maps Extractor · Google Maps Lead Scraper · Google Maps Lead Extractor**
@@ -123,7 +123,7 @@ dotnet nuget push src/GmapsLeadFinder.GoogleMapsScraper.Cli/bin/Release/*.nupkg 
 | Website | https://gmapsleadfinder.com |
 | HTTP API | https://gmapsleadfinder.com/docs/api |
 | NuGet | https://www.nuget.org/packages/GmapsLeadFinder.GoogleMapsScraper |
-| Monorepo | https://github.com/google-maps-lead-scraper/google-maps-scraper |
+| Monorepo | https://github.com/GMaps-Lead-Finder/google-maps-scraper |
 
 ## License
 

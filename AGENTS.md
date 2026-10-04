@@ -19,7 +19,7 @@ pip install google-maps-scraper-sdk
 npm install @gmapsleadfinder/google-maps-scraper
 # import: import { Client } from "@gmapsleadfinder/google-maps-scraper"
 
-go get github.com/google-maps-lead-scraper/google-maps-scraper/go@v0.1.2
+go get github.com/GMaps-Lead-Finder/google-maps-scraper/go@v0.1.3
 # first: go mod init … ; import gmaps "github.com/…/go"
 
 cargo add google-maps-scraper-sdk
@@ -27,7 +27,7 @@ cargo add google-maps-scraper-sdk
 
 composer require gmapsleadfinder/google-maps-scraper
 # use GmapsLeadFinder\GoogleMapsScraper\Client;
-# repo: https://github.com/google-maps-lead-scraper/google-maps-scraper-php
+# repo: https://github.com/GMaps-Lead-Finder/google-maps-scraper-php
 
 gem install google-maps-scraper-sdk
 # require "gmaps_scraper" → GmapsScraper::Client
@@ -54,7 +54,7 @@ MCP tools map 1:1 to HTTP: `gmaps_me`, `gmaps_create_job`, `gmaps_get_job`, `gma
 
 ## HTTP workflow
 
-1. `GET /api/v1/me` — confirm `creditsRemaining > 0` and plan allows API.
+1. `GET /api/v1/me` — confirm `creditsRemaining > 0` (includes permanent packs) and plan allows API (Growth+; pack-only accounts are Starter-tier features only).
 2. `POST /api/v1/jobs` with `{ "keyword": "<one query>" }` → `jobId`.
 3. Poll `GET /api/v1/jobs/{id}` until `completed`, `partial`, or `failed`.
 4. `GET /api/v1/jobs/{id}/results?limit=100` and follow `nextCursor` until `null`.
@@ -96,16 +96,17 @@ Rows are objects keyed by export column headers, e.g. `Name`, `Phone`, `Website`
 - Agent & MCP: https://gmapsleadfinder.com/docs/agent
 - OpenAPI: https://gmapsleadfinder.com/openapi-agent.yaml (repo copy: `openapi/agent.yaml`)
 - Pricing: https://gmapsleadfinder.com/pricing
-- Installable Agent Skill (skills.sh): https://github.com/google-maps-lead-scraper/google-maps-scraper-skill — `npx skills add google-maps-lead-scraper/google-maps-scraper-skill`
-- Repo guides: `docs/getting-api-key.md`, `docs/http-api.md`, `docs/mcp.md`, `docs/python.md`, `docs/typescript.md`, `go/README.md`, `rust/README.md`, `ruby/README.md`, `dotnet/README.md`
-- PHP SDK (separate repo): https://github.com/google-maps-lead-scraper/google-maps-scraper-php — Packagist `gmapsleadfinder/google-maps-scraper`
+- Installable Agent Skill (skills.sh): https://github.com/GMaps-Lead-Finder/google-maps-scraper-skill — `npx skills add GMaps-Lead-Finder/google-maps-scraper-skill`
+- Repo guides: https://github.com/google-maps-lead-scraper/google-maps-scraper-integration (`docs/getting-api-key.md`, `docs/http-api.md`, `docs/mcp.md`, `docs/python.md`, `docs/typescript.md`); language SDK READMEs in this repo (`go/`, `rust/`, `ruby/`, `dotnet/`)
+- n8n / Make / Zapier / Sheets: https://github.com/google-maps-lead-scraper/google-maps-scraper-integration (`examples/`, `docs/n8n/`, `docs/zapier/`, `docs/make/`, `google-sheets/`)
+- PHP SDK (separate repo): https://github.com/GMaps-Lead-Finder/google-maps-scraper-php — Packagist `gmapsleadfinder/google-maps-scraper`
 
 ## When editing this repo
 
 - Keep Python, TypeScript, Go, Rust, Ruby, .NET, and PHP public APIs aligned (PHP changes land in the separate PHP repo).
 - Do not add Playwright/Selenium scrapers or auth bypasses.
-- Update examples and docs together when changing client surfaces.
-- Go releases use Git tags `go/vX.Y.Z` (see `docs/publishing.md`).
+- Update the **integration** repo docs/examples when changing client surfaces that affect automations.
+- Go releases use Git tags `go/vX.Y.Z` (see integration `docs/publishing.md`).
 - Rust releases use `cargo publish` from `rust/`.
 - Ruby releases use `gem build` / `gem push` from `ruby/`.
 - .NET releases use `dotnet pack` / `dotnet nuget push` from `dotnet/`.

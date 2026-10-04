@@ -1,7 +1,7 @@
 # Google Maps Scraper
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/google-maps-lead-scraper/google-maps-scraper/main/google-maps-scraper.png" alt="Google Maps Lead Scraper" width="100%" />
+  <img src="https://raw.githubusercontent.com/GMaps-Lead-Finder/google-maps-scraper/main/google-maps-scraper.png" alt="Google Maps Lead Scraper" width="100%" />
 </p>
 
 **Google Maps Extractor · Google Maps Lead Scraper · Google Maps Lead Extractor**
@@ -79,7 +79,7 @@ gmaps-scraper scrape "dentists in Austin TX" --out leads.csv
 
 ### `me()`
 
-Returns plan and credits: `plan`, `creditsLimit`, `creditsUsed`, `creditsRemaining`.
+Returns plan and credits: `plan`, `creditsLimit`, `creditsUsed`, `creditsRemaining`, plus optional `permanentCredits` / `subscriptionCreditsRemaining` (permanent packs never expire; pack-only accounts get Starter features; Agent API still requires Growth+).
 
 ### `create_job(keyword)`
 
@@ -159,8 +159,8 @@ python -m gmaps_scraper.cli scrape "coffee shops in Austin TX" --out leads.csv
 | OpenAPI | https://gmapsleadfinder.com/openapi-agent.yaml |
 | Get API key | https://gmapsleadfinder.com/account#api-key |
 | PyPI | https://pypi.org/project/google-maps-scraper-sdk/ |
-| Source / examples | https://github.com/google-maps-lead-scraper/google-maps-scraper |
-| Python guide | https://github.com/google-maps-lead-scraper/google-maps-scraper/blob/main/docs/python.md |
+| Source / examples | https://github.com/GMaps-Lead-Finder/google-maps-scraper |
+| Python guide | https://github.com/google-maps-lead-scraper/google-maps-scraper-integration/blob/main/docs/python.md |
 
 Prefer Remote MCP for Claude / Cursor / Codex? See the [Agent docs](https://gmapsleadfinder.com/docs/agent).
 

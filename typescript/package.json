@@ -38,12 +38,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/google-maps-lead-scraper/google-maps-scraper.git",
+    "url": "git+https://github.com/GMaps-Lead-Finder/google-maps-scraper.git",
     "directory": "typescript"
   },
   "homepage": "https://gmapsleadfinder.com",
   "bugs": {
-    "url": "https://github.com/google-maps-lead-scraper/google-maps-scraper/issues"
+    "url": "https://github.com/GMaps-Lead-Finder/google-maps-scraper/issues"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
