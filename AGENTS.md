@@ -19,7 +19,7 @@ pip install google-maps-scraper-sdk
 npm install @gmapsleadfinder/google-maps-scraper
 # import: import { Client } from "@gmapsleadfinder/google-maps-scraper"
 
-go get github.com/GMaps-Lead-Finder/google-maps-scraper/go@v0.1.3
+go get github.com/gmaps-lead-finder/google-maps-scraper/go@v0.1.4
 # first: go mod init … ; import gmaps "github.com/…/go"
 
 cargo add google-maps-scraper-sdk
@@ -27,7 +27,7 @@ cargo add google-maps-scraper-sdk
 
 composer require gmapsleadfinder/google-maps-scraper
 # use GmapsLeadFinder\GoogleMapsScraper\Client;
-# repo: https://github.com/GMaps-Lead-Finder/google-maps-scraper-php
+# repo: https://github.com/gmaps-lead-finder/google-maps-scraper-php
 
 gem install google-maps-scraper-sdk
 # require "gmaps_scraper" → GmapsScraper::Client
@@ -96,9 +96,9 @@ Rows are objects keyed by export column headers, e.g. `Name`, `Phone`, `Website`
 - Agent & MCP: https://gmapsleadfinder.com/docs/agent
 - OpenAPI: https://gmapsleadfinder.com/openapi-agent.yaml (repo copy: `openapi/agent.yaml`)
 - Pricing: https://gmapsleadfinder.com/pricing
-- Installable Agent Skill (skills.sh): https://github.com/GMaps-Lead-Finder/google-maps-scraper-skill — `npx skills add GMaps-Lead-Finder/google-maps-scraper-skill`
+- Installable Agent Skill (skills.sh): https://github.com/gmaps-lead-finder/google-maps-scraper-skill — `npx skills add gmaps-lead-finder/google-maps-scraper-skill`
 - Language SDK READMEs in this repo: `python/`, `typescript/`, `go/`, `rust/`, `ruby/`, `dotnet/`
-- PHP SDK (separate repo): https://github.com/GMaps-Lead-Finder/google-maps-scraper-php — Packagist `gmapsleadfinder/google-maps-scraper`
+- PHP SDK (separate repo): https://github.com/gmaps-lead-finder/google-maps-scraper-php — Packagist `gmapsleadfinder/google-maps-scraper`
 
 ## When editing this repo
 

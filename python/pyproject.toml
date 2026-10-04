@@ -26,9 +26,9 @@ dependencies = []
 [project.urls]
 Homepage = "https://gmapsleadfinder.com"
 Documentation = "https://gmapsleadfinder.com/docs/api"
-Repository = "https://github.com/GMaps-Lead-Finder/google-maps-scraper"
-Issues = "https://github.com/GMaps-Lead-Finder/google-maps-scraper/issues"
-Changelog = "https://github.com/GMaps-Lead-Finder/google-maps-scraper/blob/main/CHANGELOG.md"
+Repository = "https://github.com/gmaps-lead-finder/google-maps-scraper"
+Issues = "https://github.com/gmaps-lead-finder/google-maps-scraper/issues"
+Changelog = "https://github.com/gmaps-lead-finder/google-maps-scraper/blob/main/CHANGELOG.md"
 
 [project.scripts]
 gmaps-scraper = "gmaps_scraper.cli:main"

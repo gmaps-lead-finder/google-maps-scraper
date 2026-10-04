@@ -14,7 +14,7 @@
     <PackageTags>google-maps;scraper;cli;gmapsleadfinder</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://gmapsleadfinder.com</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/GMaps-Lead-Finder/google-maps-scraper</RepositoryUrl>
+    <RepositoryUrl>https://github.com/gmaps-lead-finder/google-maps-scraper</RepositoryUrl>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>gmaps-scraper</ToolCommandName>
     <PackageReadmeFile>README.md</PackageReadmeFile>

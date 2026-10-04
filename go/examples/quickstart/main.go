@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	gmaps "github.com/GMaps-Lead-Finder/google-maps-scraper/go"
+	gmaps "github.com/gmaps-lead-finder/google-maps-scraper/go"
 )
 
 const keyword = "dentists in Austin TX"

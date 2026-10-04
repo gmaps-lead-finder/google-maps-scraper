@@ -15,9 +15,9 @@
 - OpenAPI: https://gmapsleadfinder.com/openapi-agent.yaml
 - Support: support@gmapsleadfinder.com
 - Agent instructions in this repo: /AGENTS.md
-- Installable Agent Skill (skills.sh): https://github.com/GMaps-Lead-Finder/google-maps-scraper-skill — `npx skills add GMaps-Lead-Finder/google-maps-scraper-skill`
+- Installable Agent Skill (skills.sh): https://github.com/gmaps-lead-finder/google-maps-scraper-skill — `npx skills add gmaps-lead-finder/google-maps-scraper-skill`
 - Language SDK READMEs in this repo: /python/README.md, /typescript/README.md, /go/README.md, /rust/README.md, /ruby/README.md, /dotnet/README.md
-- PHP SDK (separate repo): https://github.com/GMaps-Lead-Finder/google-maps-scraper-php
+- PHP SDK (separate repo): https://github.com/gmaps-lead-finder/google-maps-scraper-php
 
 ## API summary
 
@@ -47,13 +47,13 @@
 
 - Install Python: `pip install google-maps-scraper-sdk` (import `gmaps_scraper`)
 - Install TypeScript: `npm install @gmapsleadfinder/google-maps-scraper`
-- Install Go: inside a module, `go get github.com/GMaps-Lead-Finder/google-maps-scraper/go@v0.1.3`
+- Install Go: inside a module, `go get github.com/gmaps-lead-finder/google-maps-scraper/go@v0.1.4`
 - Install Rust: `cargo add google-maps-scraper-sdk` (path `google_maps_scraper_sdk`)
 - Install PHP: `composer require gmapsleadfinder/google-maps-scraper` (namespace `GmapsLeadFinder\GoogleMapsScraper`)
 - Install Ruby: `gem install google-maps-scraper-sdk` (require `gmaps_scraper` → `GmapsScraper::Client`)
 - Install .NET: `dotnet add package GmapsLeadFinder.GoogleMapsScraper` (namespace `GmapsLeadFinder.GoogleMapsScraper`)
 - CLI tool: `dotnet tool install -g GmapsLeadFinder.GoogleMapsScraper.Cli`
-- Source: `/python`, `/typescript`, `/go`, `/rust`, `/ruby`, `/dotnet`; PHP: https://github.com/GMaps-Lead-Finder/google-maps-scraper-php
+- Source: `/python`, `/typescript`, `/go`, `/rust`, `/ruby`, `/dotnet`; PHP: https://github.com/gmaps-lead-finder/google-maps-scraper-php
 - Packagist: https://packagist.org/packages/gmapsleadfinder/google-maps-scraper
 - RubyGems: https://rubygems.org/gems/google-maps-scraper-sdk
 - NuGet: https://www.nuget.org/packages/GmapsLeadFinder.GoogleMapsScraper

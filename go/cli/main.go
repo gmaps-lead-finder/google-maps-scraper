@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	gmaps "github.com/GMaps-Lead-Finder/google-maps-scraper/go"
+	gmaps "github.com/gmaps-lead-finder/google-maps-scraper/go"
 )
 
 func main() {

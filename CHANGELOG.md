@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Move GitHub org to [GMaps-Lead-Finder](https://github.com/GMaps-Lead-Finder); Go module path is now `github.com/GMaps-Lead-Finder/google-maps-scraper/go` (tag `go/v0.1.3`)
+- GitHub org is now [gmaps-lead-finder](https://github.com/gmaps-lead-finder); Go module path `github.com/gmaps-lead-finder/google-maps-scraper/go` (tag `go/v0.1.4`)
 
 
 All notable changes to this project will be documented in this file.
@@ -25,9 +25,9 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Go SDK module `github.com/GMaps-Lead-Finder/google-maps-scraper/go` (tag `go/v0.1.1` for pkg.go.dev)
+- Go SDK module `github.com/gmaps-lead-finder/google-maps-scraper/go` (tag `go/v0.1.1` for pkg.go.dev)
 - Rust crate `google-maps-scraper-sdk` for crates.io (`rust/`)
-- PHP SDK Packagist `gmapsleadfinder/google-maps-scraper` in separate repo [google-maps-scraper-php](https://github.com/GMaps-Lead-Finder/google-maps-scraper-php) (`v0.1.1`)
+- PHP SDK Packagist `gmapsleadfinder/google-maps-scraper` in separate repo [google-maps-scraper-php](https://github.com/gmaps-lead-finder/google-maps-scraper-php) (`v0.1.1`)
 - Ruby gem `google-maps-scraper-sdk` for RubyGems (`ruby/`, require `gmaps_scraper`)
 - .NET NuGet `GmapsLeadFinder.GoogleMapsScraper` + CLI tool `GmapsLeadFinder.GoogleMapsScraper.Cli` (`dotnet/`)
 

@@ -8,7 +8,7 @@
 [![npm](https://img.shields.io/npm/v/@gmapsleadfinder/google-maps-scraper.svg)](https://www.npmjs.com/package/@gmapsleadfinder/google-maps-scraper)
 [![PyPI](https://img.shields.io/pypi/v/google-maps-scraper-sdk.svg)](https://pypi.org/project/google-maps-scraper-sdk/)
 [![Crates.io](https://img.shields.io/crates/v/google-maps-scraper-sdk.svg)](https://crates.io/crates/google-maps-scraper-sdk)
-[![Go Reference](https://pkg.go.dev/badge/github.com/GMaps-Lead-Finder/google-maps-scraper/go.svg)](https://pkg.go.dev/github.com/GMaps-Lead-Finder/google-maps-scraper/go)
+[![Go Reference](https://pkg.go.dev/badge/github.com/gmaps-lead-finder/google-maps-scraper/go.svg)](https://pkg.go.dev/github.com/gmaps-lead-finder/google-maps-scraper/go)
 [![Packagist](https://img.shields.io/packagist/v/gmapsleadfinder/google-maps-scraper.svg)](https://packagist.org/packages/gmapsleadfinder/google-maps-scraper)
 [![Gem Version](https://img.shields.io/gem/v/google-maps-scraper-sdk.svg)](https://rubygems.org/gems/google-maps-scraper-sdk)
 [![NuGet](https://img.shields.io/nuget/v/GmapsLeadFinder.GoogleMapsScraper.svg)](https://www.nuget.org/packages/GmapsLeadFinder.GoogleMapsScraper)
@@ -16,7 +16,7 @@
 [![Node.js 18+](https://img.shields.io/badge/node-18+-339933.svg)](typescript/)
 [![Go 1.22+](https://img.shields.io/badge/go-1.22+-00ADD8.svg)](go/)
 [![Rust](https://img.shields.io/badge/rust-1.70+-dea584.svg)](rust/)
-[![PHP 8.1+](https://img.shields.io/badge/php-8.1+-777BB4.svg)](https://github.com/GMaps-Lead-Finder/google-maps-scraper-php)
+[![PHP 8.1+](https://img.shields.io/badge/php-8.1+-777BB4.svg)](https://github.com/gmaps-lead-finder/google-maps-scraper-php)
 [![Ruby 3.1+](https://img.shields.io/badge/ruby-3.1+-CC342D.svg)](ruby/)
 [![.NET 8+](https://img.shields.io/badge/.NET-8+-512BD4.svg)](dotnet/)
 
@@ -76,11 +76,11 @@ console.log(rows.length, rows[0]);
 ### Go
 
 ```bash
-go get github.com/GMaps-Lead-Finder/google-maps-scraper/go@v0.1.3
+go get github.com/gmaps-lead-finder/google-maps-scraper/go@v0.1.4
 ```
 
 ```go
-import gmaps "github.com/GMaps-Lead-Finder/google-maps-scraper/go"
+import gmaps "github.com/gmaps-lead-finder/google-maps-scraper/go"
 
 client, _ := gmaps.NewClient(nil) // reads GMF_API_KEY
 rows, _ := client.Scrape("dentists in Austin TX", nil)
@@ -128,7 +128,7 @@ echo count($rows), "\n";
 // $photos = $client->scrapePhotos("<place>");
 ```
 
-Source: [google-maps-scraper-php](https://github.com/GMaps-Lead-Finder/google-maps-scraper-php) (Packagist: `gmapsleadfinder/google-maps-scraper`).
+Source: [google-maps-scraper-php](https://github.com/gmaps-lead-finder/google-maps-scraper-php) (Packagist: `gmapsleadfinder/google-maps-scraper`).
 
 ### Ruby
 
@@ -179,15 +179,15 @@ Console.WriteLine(rows.Count);
 | HTTP API docs | https://gmapsleadfinder.com/docs/api |
 | Agent & MCP docs | https://gmapsleadfinder.com/docs/agent |
 | Agents hub | https://gmapsleadfinder.com/agents |
-| Agent Skill (skills.sh) | https://github.com/GMaps-Lead-Finder/google-maps-scraper-skill — `npx skills add GMaps-Lead-Finder/google-maps-scraper-skill` |
+| Agent Skill (skills.sh) | https://github.com/gmaps-lead-finder/google-maps-scraper-skill — `npx skills add gmaps-lead-finder/google-maps-scraper-skill` |
 | OpenAPI | https://gmapsleadfinder.com/openapi-agent.yaml |
 | Account / API key | https://gmapsleadfinder.com/account#api-key |
 | npm | https://www.npmjs.com/package/@gmapsleadfinder/google-maps-scraper |
 | PyPI | https://pypi.org/project/google-maps-scraper-sdk/ |
-| Go (pkg.go.dev) | https://pkg.go.dev/github.com/GMaps-Lead-Finder/google-maps-scraper/go |
+| Go (pkg.go.dev) | https://pkg.go.dev/github.com/gmaps-lead-finder/google-maps-scraper/go |
 | crates.io | https://crates.io/crates/google-maps-scraper-sdk |
 | Packagist (PHP) | https://packagist.org/packages/gmapsleadfinder/google-maps-scraper |
-| PHP repo | https://github.com/GMaps-Lead-Finder/google-maps-scraper-php |
+| PHP repo | https://github.com/gmaps-lead-finder/google-maps-scraper-php |
 | RubyGems | https://rubygems.org/gems/google-maps-scraper-sdk |
 | NuGet | https://www.nuget.org/packages/GmapsLeadFinder.GoogleMapsScraper |
 | Support | support@gmapsleadfinder.com |
@@ -244,7 +244,7 @@ AGENTS.md        # Instructions for AI agents
 llms.txt         # Machine-readable summary
 
 # PHP lives in a separate repo (Packagist root composer.json):
-# https://github.com/GMaps-Lead-Finder/google-maps-scraper-php
+# https://github.com/gmaps-lead-finder/google-maps-scraper-php
 ```
 
 ## License

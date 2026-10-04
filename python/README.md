@@ -1,7 +1,7 @@
 # Google Maps Scraper
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/GMaps-Lead-Finder/google-maps-scraper/main/google-maps-scraper.png" alt="Google Maps Lead Scraper" width="100%" />
+  <img src="https://raw.githubusercontent.com/gmaps-lead-finder/google-maps-scraper/main/google-maps-scraper.png" alt="Google Maps Lead Scraper" width="100%" />
 </p>
 
 **Google Maps Extractor · Google Maps Lead Scraper · Google Maps Lead Extractor**
@@ -159,7 +159,7 @@ python -m gmaps_scraper.cli scrape "coffee shops in Austin TX" --out leads.csv
 | OpenAPI | https://gmapsleadfinder.com/openapi-agent.yaml |
 | Get API key | https://gmapsleadfinder.com/account#api-key |
 | PyPI | https://pypi.org/project/google-maps-scraper-sdk/ |
-| Source / examples | https://github.com/GMaps-Lead-Finder/google-maps-scraper |
+| Source / examples | https://github.com/gmaps-lead-finder/google-maps-scraper |
 
 Prefer Remote MCP for Claude / Cursor / Codex? See the [Agent docs](https://gmapsleadfinder.com/docs/agent).
 
